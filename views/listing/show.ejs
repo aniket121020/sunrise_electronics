@@ -1,0 +1,9 @@
+<% layout("/layouts/boilerplate.ejs") -%> 
+<body>
+    <b><%= listing.title %></b>
+    <p><%= listing.description %></p>
+    <br><br><br>
+    <form action="/listing/<%= listing._id %>?_method=Delete" method="post">
+        <button class="btn btn-dark">Delete</button>
+    </form>
+</body>
